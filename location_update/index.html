@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Update Location</title>
+   </head>
+   
+   <script src = "/socket.io/socket.io.js"></script>
+   <script>
+      var socket = io();
+      function updatelocation() {
+         socket.emit('UpdateLocation', {latitude:document.getElementById('latitude').value,longitude:document.getElementById('longitude').value,bearing:document.getElementById('provider_id').value,provider_id:document.getElementById('provider_id').value});
+      };
+      socket.on('GetLocation-1', function(data) {
+         alert(data.latitude);
+         alert(data.longitude);
+         alert(data.provider_id);
+         alert(data.bearing);
+      })
+   </script>
+   
+   <body>
+      <div id = "error-container"></div>
+      <input id = "provider_id" type = "text" name = "provider_id" value = "" 
+         placeholder = "provider_id">
+         <input id = "latitude" type = "text" name = "latitude" value = "" 
+         placeholder = "latitude">
+           <input id = "longitude" type = "text" name = "longitude" value = "" 
+         placeholder = "longitude">
+         <input id = "bearing" type = "text" name = "bearing" value = "" 
+         placeholder = "bearing">
+      <button type = "button" name = "Update" onclick = "updatelocation()">
+        Update Location
+      </button>
+   </body>
+</html>

@@ -1,0 +1,76 @@
+<div class="">
+
+        <div class="card">
+                <div class="card-content">
+                    <h5>Provider Deatils</h5>
+                    <div class="row">
+                        <div class="col m2">
+                            <div class="profile_img">
+                                <img src="{{getproviderdata.image}}" class="responsive-img" />
+                            </div>
+                        </div>
+                        <div class="col m10">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered table-striped table_head">
+                                        <thead>
+                                            <tr>
+                                                <th>ID</th>
+                                                <th>First Name</th>
+                                                <th>Last Name</th>
+                                                <th>Email</th>
+                                                <th>Mobile</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+
+                                            <tr>
+                                                <td>{{getproviderdata.id}}</td>
+                                                <td>{{getproviderdata.first_name}}</td>
+                                                <td>{{getproviderdata.last_name}}</td>
+                                                <td>{{getproviderdata.email}}</td>
+                                                <td>{{getproviderdata.mobile}}</td>
+                                            </tr>                
+                                        </tbody>
+                                    </table>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <div class="card">
+                <div class="card-content">
+                    <h5>Providers Booking</h5>
+                    <table datatable="ng" class="table table-bordered table-striped table_head">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Booking Order Id</th>
+                            <th>User name</th>
+                            <th>Provider name</th>
+                            <th>Sub category name</th>
+                            <th>Booking Date</th>
+                            <th>Rating</th>
+                            <th>Status</th>
+                            <th>Feedback</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="getproviderbookg in getproviderbook">
+                            <td>{{getproviderbookg.id}}</td>
+                            <td>{{getproviderbookg.booking_order_id}}</td>
+                            <td>{{getproviderbookg.username}}</td>
+                            <td>{{getproviderbookg.providername}}</td>
+                            <td>{{getproviderbookg.sub_category_name}}</td>
+                            <td>{{getproviderbookg.booking_date}} {{getproviderbookg.days}} {{getproviderbookg.timing}}</td>
+                            <td><angular-star-rating max="maxValue" value="getproviderbookg.rating"  hover="changeOnHover" is-readonly="isReadonly"></angular-star-rating></td>
+                            <td>{{getproviderbookg.status}}</td>
+                            <td>{{getproviderbookg.feedback}}</td>
+                        </tr>                
+                    </tbody>
+                </table>      
+                </div>
+        </div>
+
+</div>
+                

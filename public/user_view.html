@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="assets/plugins/ionicons/css/ionicons.min.css" rel="stylesheet">
+        <title>Welcome</title>
+        <!--Import Google Icon Font-->
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="assets/plugins/materialize/css/materialize.min.css"  media="screen"/>
+        <!-- dataTables -->
+        <link href="assets/plugins/datatables/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/plugins/datatables/css/responsive.bootstrap.min.css" rel="stylesheet" type="text/css">
+        <!--Template style-->
+        <link href="assets/css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="preloader">
+            <div class="preloader-wrapper big active">
+                <div class="spinner-layer spinner-blue">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div><div class="gap-patch">
+                        <div class="circle"></div>
+                    </div><div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+
+                <div class="spinner-layer spinner-red">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div><div class="gap-patch">
+                        <div class="circle"></div>
+                    </div><div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+
+                <div class="spinner-layer spinner-yellow">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div><div class="gap-patch">
+                        <div class="circle"></div>
+                    </div><div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+
+                <div class="spinner-layer spinner-green">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div><div class="gap-patch">
+                        <div class="circle"></div>
+                    </div><div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>               
+            </div>
+        </div>
+        <!-- end preloader-->
+
+
+        <!--\\\\\\\\\\\\\\\\\\\\\\\\\\\\Start top bar header\\\\\\\\\\\\\\\\\\\\\\\-->
+        <header id="header" class="top-bar">
+            <div class="navbar-fixed">
+                <nav class="teal">
+                    <div class="nav-wrapper">
+                        <ul class="left">                      
+                            <li><h1 class="logo-wrapper center-align"><a href="index-2.html" class="brand-logo">Company name</a></h1></li>
+                        </ul>
+
+                        <ul class="right col s9 m3 nav-right-menu">
+                            <li><a class='dropdown-button  dropdown-right' href='#' data-activates='dropdown'><img src='images/avatar-03.png' alt="" width="40"></a></li>
+                        </ul>
+                        <!-- Dropdown Structure -->
+                        <ul id='dropdown' class='dropdown-content profile-dropdown'>
+                            <li><a href="#!">Profile</a></li>
+                            <li><a href="#!">Settings</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#!">Logout</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+            </div>
+        </header>
+        <!--\\\\\\\\\\\\\\\\\\\\\\\\\\\\End top bar header\\\\\\\\\\\\\\\\\\\\\\\-->
+
+
+
+        <!--\\\\\\\\\\\\\\\\\\\ Start left side nav\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+        <aside id="slide-out" class="side-nav black fixed">
+            <div class="side-nav-wrapper">
+                <ul class="sidebar-menu collapsible collapsible-accordion" data-collapsible="accordion">
+                    <li class="no-padding">
+                        <a href="index.html" class="waves-effect waves-grey"><i class="material-icons">dashboard</i>Dashboard</a>
+                    </li>
+                    <li class="no-padding"><a class="waves-effect waves-grey" href="deals.html"><i class="material-icons">thumbs_up_down</i>Deals</a></li>
+                    <li class="no-padding"><a class="waves-effect waves-grey active" href="users.html"><i class="material-icons">account_circle</i>Users</a></li>
+                    <li class="no-padding"><a class="waves-effect waves-grey" href="push-notification.html"><i class="material-icons">comment</i>Push Notification</a></li>
+                    <li class="no-padding"><a class="waves-effect waves-grey" href="#"><i class="material-icons">redeem</i>Special Offers</a></li>
+                    <li class="no-padding"><a class="waves-effect waves-grey" href="Employee.html"><i class="material-icons">accessible</i>Employees</a></li>
+                    <li class="no-padding"><a class="waves-effect waves-grey" href="feedback.html"><i class="material-icons">rate_review</i>Feedback</a></li>
+                    <li class="no-padding"><a class="waves-effect waves-grey" href="#"><i class="material-icons">class</i>Voucher</a></li>
+                    <li class="footer center"><span class="grey-text">&copy; 2016-2017. Company Name</span></li>
+                </ul>
+            </div>
+        </aside>
+        <a href="#" data-activates="slide-out" class="button-collapse hide-on-large-only"><i class="material-icons">menu</i></a>
+        <!--//////////////////End left side nav/////////////////-->
+
+
+
+
+
+        <!--\\\\\\\\\\\\\\\\\\\\\\\\\\\\Main content Start\\\\\\\\\\\\\\\\\\\\\\\-->
+        <main class="main-content">
+            <div class="page-content">
+                <div class="row margin-b-0">
+                    <div class="col s12">                      
+                        <div class="card user_view horizontal">
+                            <div class="card-image">
+                                <img src="assets/images/pro_pic.jpg" alt="" class="responsive-img">
+                            </div>
+                            <div class="card-stacked">
+                                <div class="card-content">
+                                    <h3><i class="material-icons">redeem</i> 1234<span> (Ribbon Pin)</span></h3>
+                                    <table class="table_custom">
+                                        <thead>
+                                            <tr>
+                                                <th>First Name</th>
+                                                <th>Last Name</th>
+                                                <th>D.O.B</th>
+                                                <th>Gender</th>
+                                                <th>Points</th>
+                                                <th>Email</th>
+                                                <th>Logintype</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>                                            
+                                            <tr>
+                                                <td>User First Name</td>
+                                                <td>User Last Name</td>
+                                                <td>12.1.1990</td>
+                                                <td>Male</td>
+                                                <td>123</td>
+                                                <td>user@gmail.com</td>
+                                                <td>Facebook</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s6">
+                        <div class="card">
+                            <div class="card-head teal">
+                                <span class="card-title">Product Ordered by this User</span>
+                            </div>
+                            <div class="card-content card_scroll">
+                                <table class="striped">
+                                    <thead>
+                                        <tr>
+                                            <th data-field="id">Name</th>
+                                            <th data-field="name">Item Name</th>
+                                            <th data-field="price">Item Price</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr>
+                                            <td>Alvin</td>
+                                            <td>Eclair</td>
+                                            <td>$0.87</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Alan</td>
+                                            <td>Jellybean</td>
+                                            <td>$3.76</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jonathan</td>
+                                            <td>Lollipop</td>
+                                            <td>$7.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Alan</td>
+                                            <td>Jellybean</td>
+                                            <td>$3.76</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jonathan</td>
+                                            <td>Lollipop</td>
+                                            <td>$7.00</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s6">
+                        <div class="card">
+                            <div class="card-head green">
+                                <span class="card-title">Product Ordered by this User</span>
+                            </div>
+                            <div class="card-content card_scroll">
+                                <table class="striped">
+                                    <thead>
+                                        <tr>
+                                            <th data-field="id">Name</th>
+                                            <th data-field="name">Item Name</th>
+                                            <th data-field="price">Item Price</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr>
+                                            <td>Alvin</td>
+                                            <td>Eclair</td>
+                                            <td>$0.87</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Alan</td>
+                                            <td>Jellybean</td>
+                                            <td>$3.76</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jonathan</td>
+                                            <td>Lollipop</td>
+                                            <td>$7.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Alan</td>
+                                            <td>Jellybean</td>
+                                            <td>$3.76</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jonathan</td>
+                                            <td>Lollipop</td>
+                                            <td>$7.00</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s6">
+                        <div class="card">
+                            <div class="card-head blue">
+                                <span class="card-title">Product Ordered by this User</span>
+                            </div>
+                            <div class="card-content card_scroll">
+                                <table class="striped">
+                                    <thead>
+                                        <tr>
+                                            <th data-field="id">Name</th>
+                                            <th data-field="name">Item Name</th>
+                                            <th data-field="price">Item Price</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr>
+                                            <td>Alvin</td>
+                                            <td>Eclair</td>
+                                            <td>$0.87</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Alan</td>
+                                            <td>Jellybean</td>
+                                            <td>$3.76</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jonathan</td>
+                                            <td>Lollipop</td>
+                                            <td>$7.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Alan</td>
+                                            <td>Jellybean</td>
+                                            <td>$3.76</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jonathan</td>
+                                            <td>Lollipop</td>
+                                            <td>$7.00</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s6">
+                        <div class="card">
+                            <div class="card-head indigo">
+                                <span class="card-title">Product Ordered by this User</span>
+                            </div>
+                            <div class="card-content card_scroll">
+                                <table class="striped">
+                                    <thead>
+                                        <tr>
+                                            <th data-field="id">Name</th>
+                                            <th data-field="name">Item Name</th>
+                                            <th data-field="price">Item Price</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr>
+                                            <td>Alvin</td>
+                                            <td>Eclair</td>
+                                            <td>$0.87</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Alan</td>
+                                            <td>Jellybean</td>
+                                            <td>$3.76</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jonathan</td>
+                                            <td>Lollipop</td>
+                                            <td>$7.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Alan</td>
+                                            <td>Jellybean</td>
+                                            <td>$3.76</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jonathan</td>
+                                            <td>Lollipop</td>
+                                            <td>$7.00</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div><!--end row-->
+            </div>
+        </main>
+        <!--\\\\\\\\\\\\\\\\\\\\\\\\\\\\Main content end\\\\\\\\\\\\\\\\\\\\\\\-->
+
+
+        <!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="assets/plugins/jquery/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/plugins/materialize/js/materialize.min.js"></script>
+        <script type="text/javascript" src="assets/js/app.js"></script>
+             <!-- Datatables-->
+        <script src="assets/plugins/datatables/js/jquery.dataTables.min.js"></script>
+        <script src="assets/plugins/datatables/js/dataTables.responsive.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('#datatable').dataTable();
+            });
+        </script>
+
+<!-- Modal Structure -->
+<div id="modal_edit" class="modal">
+    <div class="modal-content">
+      <h4>Edit Details</h4>
+      <div class="row margin-b-0 margin-t-20">
+        <form class="col s12">
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="" type="text" class="validate" placeholder="" value="Tiger Nixon">
+                    <label for="" class="active">User Name</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="" type="email" class="validate" placeholder="" value="tiger@gmail.com">
+                    <label for="" class="active">Email</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                        <select>
+                            <option value="" disabled>Choose your option</option>
+                            <option value="1" selected>Facebook</option>
+                            <option value="2">Google Plus</option>
+                            <option value="3">Twitter</option>
+                        </select>
+                        <label>Login Type</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="" type="text" class="validate" placeholder="" value="23">
+                    <label for="" class="active">No of Purchases</label>
+                </div>
+            </div>
+            
+        </form>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="left modal-action modal-close waves-effect red btn">cancel</a>
+      <a href="#!" class="right modal-action green waves-effect btn">save</a>
+    </div>
+</div>
+
+<!-- Modal Structure -->
+<div id="modal_delete" class="modal">
+    <div class="modal-content">
+      <h4>Delete User Details</h4>
+      <p>Are you sure want to delete the datas</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="left modal-action waves-effect waves-green btn">Yes</a>
+      <a href="#!" class="right modal-action modal-close waves-effect btn">No</a>
+    </div>
+</div>
+
+    </body>
+
+</html>
+
